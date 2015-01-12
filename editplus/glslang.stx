@@ -1,0 +1,311 @@
+#TITLE=glslang 1.05
+; glslang (OpenGL Shader Language) correspond to spec 1.05
+; syntax version 0.0.1
+; email: anrdiy at yaromenok dot org
+
+#DELIMITER=,(){}[]-+*%/="'~!&|<>?:;.#
+#QUOTATION1='
+#QUOTATION2="
+#CONTINUE_QUOTE=n
+#LINECOMMENT=//
+#LINECOMMENT2=
+#COMMENTON=/*
+#COMMENTOFF=*/
+#COMMENTON2=
+#COMMENTOFF2=
+#ESCAPE=\
+#CASE=y
+#PREFIX1=
+#PREFIX2=
+#PREFIX3=
+#PREFIX4=
+#PREFIX5=
+#SUFFIX1=
+#SUFFIX2=
+#SUFFIX3=
+#SUFFIX4=
+#SUFFIX5=
+#NUMBER_PATTERN=cpp
+#SPECIAL_STX=vert
+
+#KEYWORD=Reserved words
+attribute
+const
+uniform
+varying
+break
+continue
+do
+for
+while
+if
+else
+in
+out
+inout
+true
+false
+discard
+return
+main
+precision
+highp
+mediump
+lowp
+;The following keywords are reserved for future use. Using them will result in an error:
+asm
+class
+union
+enum
+typedef
+template
+goto
+switch
+default
+inline
+noinline
+volatile
+public
+static
+extern
+external
+input
+output
+sizeof
+cast
+namespace
+using
+
+
+#KEYWORD=Basic Types
+float
+float2
+float3
+float4
+int
+void
+bool
+mat2
+mat3
+mat4
+vec2
+vec3
+vec4
+ivec2
+ivec3
+ivec4
+bvec2
+bvec3
+bvec4
+sampler1D
+sampler2D
+sampler3D
+samplerCube
+sampler1DShadow
+sampler2DShadow
+struct
+;The following keywords are reserved for future use. Using them will result in an error:
+hvec2
+hvec3
+hvec4
+dvec2
+dvec3
+dvec4
+fvec2
+fvec3
+fvec4
+sampler2DRect
+sampler3DRect
+long
+short
+double
+half
+fixed
+unsigned
+
+
+#KEYWORD=Built-in variables
+gl_Position
+gl_PointSize
+gl_ClipVertex
+gl_FragCoord
+gl_FrontFacing
+gl_FragColor
+gl_FragDepth
+gl_Color
+gl_SecondaryColor
+gl_Normal
+gl_Vertex
+gl_MultiTexCoord0
+gl_MultiTexCoord1
+gl_MultiTexCoord2
+gl_MultiTexCoord3
+gl_MultiTexCoord4
+gl_MultiTexCoord5
+gl_MultiTexCoord6
+gl_MultiTexCoord7
+gl_FogCoord
+
+#KEYWORD=Build-In Constants
+gl_MaxLights
+; = 8 // GL 1.0
+gl_MaxClipPlanes
+; = 6 // GL 1.0
+gl_MaxTextureUnits
+; = 2 // GL 1.2
+gl_MaxTextureCoordsARB
+;= 2 // ARB_fragment_program
+gl_MaxVertexAttributesGL2
+; = 16; // GL2_vertex_shader
+gl_MaxVertexUniformFloatsGL2
+; = 512; // GL2_vertex_shader
+gl_MaxVaryingFloatsGL2
+; = 32; // GL2_vertex_shader
+gl_MaxVertexTextureUnitsGL2
+;= 1; // GL2_vertex_shader
+gl_MaxFragmentTextureUnitsGL2
+; = 2; // GL2_fragment_shader
+gl_MaxFragmentUniformFloatsGL2
+; = 64; // GL2_fragment_shader
+
+#KEYWORD=Built-In Uniform State
+gl_ModelViewMatrix
+gl_ProjectionMatrix
+gl_ModelViewProjectionMatrix
+gl_NormalMatrix
+gl_TextureMatrix
+gl_NormalScale
+gl_DepthRange
+gl_ClipPlane
+gl_Point
+gl_FrontMaterial
+gl_BackMaterial
+gl_LightSource
+gl_LightModel
+gl_FrontLightModelProduct
+gl_BackLightModelProduct
+gl_FrontLightProduct
+gl_LightProducts
+gl_TextureEnvColor
+gl_EyePlaneS
+gl_EyePlaneT
+gl_EyePlaneR
+gl_EyePlaneQ
+gl_ObjectPlaneS
+gl_ObjectPlaneT
+gl_ObjectPlaneR
+gl_ObjectPlaneQ
+gl_Fog
+
+#KEYWORD=Built-In Functions
+;Angle and Tr igonometry Functions
+radians
+degrees
+sin
+cos
+tan
+asin
+acos
+atan
+;Exponential Functions
+pow
+exp2
+log2
+sqrt
+inversesqrt
+;Common functions
+abs
+sign
+floor
+ceil
+fract
+mod
+min
+max
+clamp
+mix
+step
+smoothstep
+;Geometric Functions
+length
+distance
+dot
+cross
+normalize
+transform
+faceforward
+reflect
+matrixCompMult
+;Vector Relat ional Functions
+lessThan
+lessThanEqual
+greaterThan
+greaterThanEqual
+equal
+notEqual
+any
+all
+not
+;Texture Lookup Functions
+texture1D
+texture1DProj
+texture1DProjLod
+texture2D
+texture2DProj
+texture2DProjLod
+texture3D
+texture3DProj
+texture3DProjLod
+extureCube
+extureCubeLod
+shadow1D
+shadow1DProj
+shadow1DLod
+shadow1DProjLod
+shadow2D
+shadow2DProj
+shadow2DLod
+shadow2DProjLod
+;Fragment Processing Funct ions
+dFdx
+dFdy
+fwidth
+;Noise Functions
+noise1
+noise2
+noise3
+noise4
+
+
+#KEYWORD=Varying Variables
+gl_FrontColor
+gl_BackColor
+gl_FrontSecondaryColor
+gl_BackSecondaryColor
+gl_TexCoord
+gl_FogFragCoord
+gl_Color
+gl_SecondaryColor
+gl_TexCoord
+;at most will be gl_MaxTextureCoordsARB
+gl_FogFragCoord
+
+#KEYWORD=Predefined macros
+__LINE__
+__FILE__
+__VERSION__
+
+#KEYWORD=Compiler directives
+define
+undef
+if
+ifdef
+ifndef
+else
+elif
+endif
+error
+pragma
+line
+defined
+#

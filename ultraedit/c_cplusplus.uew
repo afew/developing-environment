@@ -1,0 +1,325 @@
+/L1"C/C++" C_LANG Line Comment = // Block Comment On = /* Block Comment Off = */ Escape Char = \ String Chars = "' File Extensions = C CPP CC CXX H HPP AWK
+/Colors = 0,32768,8421376,16711808,255,
+/Colors Back = 16777215,16777215,16777215,16777215,16777215,
+/Colors Auto Back = 1,1,1,1,1,
+/Font Style = 0,0,0,0,0,
+/TGBegin "Function"
+//return type on separate line from function name and args
+/TGFindStr = "%^([a-z_][a-z_0-9^[^]*]++^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./()!]++)[~;]"
+//C++ class member functions, class::name args
+/TGFindStr = "[ ^t]++^([a-z_][a-z_0-9]++::[a-z_^~][a-z_0-9]++^)[ ^t^p]++([^p*&:, ^t^[^]/*^-'=:&a-z_0-9./(!]++)[~;]"
+//type name args
+/TGFindStr = "%[a-z_][a-z_0-9^[^]:&]++[ ^t*]+[*&]++^([a-z_][a-z_0-9]++^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./(!]++)[~;]"
+//type type name args
+/TGFindStr = "%[a-z_][:a-z_0-9*&$^[^]*]++[ ^t]+[a-z_][:a-z_0-9*&$^[^]]++[ ^t*]+[*&]++^([a-z_][a-z_0-9]++^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./(!]++)[~;]"
+//type type type name args
+/TGFindStr = "%[a-z_][:a-z_0-9^[^]*&]++[ ^t]+[a-z_][:a-z_0-9*&^[^]]++[ ^t]+[a-z_][:a-z_0-9*&^[^]]++[ ^t]+[*&]++^([a-z_][a-z_0-9]++^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./(!]++)[~;]"
+//Functions with preceding spaces/tabs(causes false positives)
+/TGFindStr = "%[ ^t]++[a-z_][a-z_0-9^[^]:&]++[ ^t*]+[*&]++^([a-z_][a-z_0-9]++^)[ ^t]++([^p*&:, ^t^[^]a-z_0-9./(!]++){++"
+/TGBegin "Parameter"
+/TGFindStr = "[ ^t^p]++^([~,]+^)"
+/TGFindBStart = "("
+/TGFindBEnd = ")"
+/TGEnd
+/TGBegin "Variable"
+//type name;
+/TGFindStr = "%[ ^t]++^([a-z0-9_]+[ ^t^*]+[a-z0-9^[^]_]+^);"
+/TGFindBStart = "{"
+/TGFindBEnd = "}"
+//type name = init;
+/TGFindStr = "%[ ^t]++^([a-z0-9_]+[ ^t^*]+[a-z0-9^[^]_]+^)[ ^t]++=*;"
+/TGFindBStart = "{"
+/TGFindBEnd = "}"
+/TGEnd
+/TGEnd
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/Member String = "^([a-z0-9_:.]+^)[ ^t^*&]+$S[ ^t^[^]a-z0-9_]++[(-);,]"
+/Variable String = "%[ ^t]++^([!-ÿ~ ^t<>]+*[~a-z^p]^)$S[ ^t;,()^-]"
+/Indent Strings = "{" "if" "else" ":"
+/Unindent Strings = "}"
+/Open Brace Strings =  "{" "(" "["
+/Close Brace Strings = "}" ")" "]"
+/Open Fold Strings = "{"
+/Close Fold Strings = "}"
+/C1"Keywords" STYLE_KEYWORD Colors = 16711680 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+#define #elif #else #endif #error #if #ifdef #ifndef #include #include_next #line #pragma #undef
+__asm __based __cdecl __declspec __except __far __fastcall __finally __fortran __huge __inline __int16
+__int32 __int64 __int8 __interrupt __leave __loadds __near __pascal __saveregs __segment __segname __self
+__stdcall __try __uuidof
+auto
+bool break
+case char const continue
+default defined do double
+else enum extern
+float for
+goto
+if int
+long
+register return
+short signed sizeof static struct switch
+typedef
+union unsigned
+void volatile
+while
+BOOL
+BYTE
+CCSTR
+COLOR16
+COLOR32
+COLOR64
+COLOR8
+CONC
+CONF
+CONST
+CSTR
+DINT
+DOUBLE
+DWORD
+FLOAT
+GL_PROGRAM
+GL_SHADER
+HRESULT
+INT
+INT16
+INT32
+INT64
+INT8
+LCUUID
+LLONG
+LONG
+LPARAM
+LPVOID
+LRESULT
+L_NIL
+L_NULL
+L_PTR
+MCHAR
+NULL
+PL_PTR
+QWORD
+SCHAR
+SHORT
+SIZE_T_
+UDINT
+UINT
+UINT16
+UINT32
+UINT64
+UINT8
+ULONG
+USHORT
+WORD
+WPARAM
+/C2"C++ Keywords" STYLE_KEYWORD Colors = 16711808 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+__multiple_inheritance __single_inheritance __virtual_inheritance
+catch class const_cast
+delete dynamic_cast
+explicit export
+false friend
+inline
+mutable
+namespace new
+operator
+private protected public
+reinterpret_cast
+static_cast
+template this throw true try typeid typename
+using
+virtual
+wchar_t
+/C3"Microsoft C extensions" STYLE_EXTENSION Colors = 128 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+dllexport dllimport
+naked
+thread
+uuid
+GetTransform
+SetFVF
+SetRenderState
+SetTextureAddressS
+SetTextureAddressT
+SetTextureFilterMag
+SetTextureFilterMin
+SetTransform
+/C4"GLC Keywords" STYLE_EXTENSION Colors = 12615808 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+DCL_CLASS_DESTROYER
+DCL_INTERFACE
+LCS_ORIENT
+LCS_ORIENT_LLANDSCAPE
+LCS_ORIENT_MATRIX
+LCS_ORIENT_PORTRAIT
+LCS_ORIENT_RLANDSCAPE
+LC_BAADFOOD
+LC_CALLBACK
+LC_CANNT_ACQUIRE_DEVICE
+LC_CANNT_ALLOC
+LC_CANNT_FIND_RESOURCE
+LC_DEADBEEF
+LC_DEFAULT
+LC_DEFAULT_NAME
+LC_DEVICE
+LC_EFAIL
+LC_FAILED
+LC_FALSE
+LC_FILE_ALREADY_OPEN
+LC_FILE_BEGIN
+LC_FILE_CANNT_ACCESS
+LC_FILE_CURRENT
+LC_FILE_END
+LC_FILE_GET_LENGTH_ERR
+LC_FILE_NOT_OPENED
+LC_HANDLE
+LC_HWND
+LC_IB
+LC_INFINITE
+LC_INLINE
+LC_INVALID_CALL
+LC_INVALID_DEVICE
+LC_INVALID_RESOURCE
+LC_IP_LEN
+LC_LOG_ERROR
+LC_LOG_FILE
+LC_LOG_GLC
+LC_LOG_INFO
+LC_LOG_MIX
+LC_LOG_SERIAL
+LC_LOG_WARNING
+LC_MAX_DIR
+LC_MAX_DRIVE
+LC_MAX_EGL_CONFIG
+LC_MAX_EXT
+LC_MAX_FNAME
+LC_MAX_KEY
+LC_MAX_PATH
+LC_MAX_PATH2
+LC_MAX_SENSOR
+LC_MAX_TSB
+LC_NOT_IMPLEMENTED
+LC_OBJ_AUDIO
+LC_OBJ_BMP
+LC_OBJ_CSV
+LC_OBJ_DEVICE
+LC_OBJ_FBX
+LC_OBJ_GPS
+LC_OBJ_GPT
+LC_OBJ_GUI
+LC_OBJ_IMAGE
+LC_OBJ_IMG
+LC_OBJ_INPUT
+LC_OBJ_JPG
+LC_OBJ_MEDIA
+LC_OBJ_MIDI
+LC_OBJ_MODEL2D
+LC_OBJ_MODEL3D
+LC_OBJ_MP3
+LC_OBJ_NSD
+LC_OBJ_OGG
+LC_OBJ_PNG
+LC_OBJ_RGD
+LC_OBJ_RNT
+LC_OBJ_SCRIPT
+LC_OBJ_SKN
+LC_OBJ_SLD
+LC_OBJ_SPRITE
+LC_OBJ_SPRITE_C
+LC_OBJ_SPRITE_L
+LC_OBJ_TDA
+LC_OBJ_TDM
+LC_OBJ_TDS
+LC_OBJ_TGA
+LC_OBJ_UNKNOWN
+LC_OBJ_VIDEO
+LC_OBJ_WAV
+LC_OBJ_XML
+LC_OK
+LC_RSC_GPACK
+LC_RSC_GPACK_
+LC_RSC_HEADER
+LC_RSC_NAME
+LC_RSC_SID
+LC_RSC_VER
+LC_SDK_DATE
+LC_SDK_VER
+LC_SOCKET
+LC_SRC_T_BUF
+LC_SRC_T_FILE
+LC_SRC_T_MEM
+LC_SRC_T_NONE
+LC_SRC_T_RSC
+LC_STATE
+LC_STYPE
+LC_ST_BOOL
+LC_ST_DOUBLE
+LC_ST_DWORD
+LC_ST_FLOAT
+LC_ST_QWORD
+LC_ST_STRING
+LC_ST_VARIANT
+LC_ST_WORD
+LC_SUCCEEDED
+LC_SUCCEEDED(hr)
+LC_TIME_ELAPSED
+LC_TIME_FRAME
+LC_TIME_STORED
+LC_TRUE
+LC_UNKNOWN
+LC_VAR
+LC_VAR_APP_INPUT
+LC_VAR_APP_MAIN
+LC_VAR_APP_NET
+LC_VAR_DISPLAY
+LC_VAR_GLDEV
+LC_VAR_GRAPHICS
+LC_VAR_GRAPHICS_DX
+LC_VAR_GRAPHICS_GL
+LC_VAR_GRAPHICS_NONE
+LC_VAR_GUI
+LC_VAR_LOG
+LC_VAR_REF_COUNT
+LC_VAR_SCREEN
+LC_VAR_SPRITE
+LC_VAR_SYS
+LC_VAR_SYS_ANDROID
+LC_VAR_SYS_BADA
+LC_VAR_SYS_IOS
+LC_VAR_SYS_LINUX
+LC_VAR_SYS_NONE
+LC_VAR_SYS_WIN32
+LC_VAR_TIME
+LC_VAR_TOTAL
+LC_VAR_TYPE_ENGINE
+LC_VAR_USER_DATA
+LC_VAR_VERSION
+LC_VAR_WIN_HANDLE
+LC_VB
+LC_WINAPI
+lc_max
+lc_min
+
+/C5"Operators" STYLE_OPERATOR Colors = 4194368 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+!
+$
+%
+&
+*
++
+-
+.
+// /
+:
+<
+=
+>
+?
+^
+|
+~
+/C6"Braces, comma, semicolon" Colors = 7091712 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
+(
+)
+,
+;
+[
+]
+{
+}
+

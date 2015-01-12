@@ -1,0 +1,43 @@
+#TITLE=MDL
+; MDL syntax file written by Heesung Oh.
+; This file is required for EditPlus to run correctly.
+
+#DELIMITER=,(){}[]-+*%/="'~!&|<>?:;.#
+#QUOTATION1='
+#QUOTATION2="
+#CONTINUE_QUOTE=n
+#LINECOMMENT=//
+#COMMENTON=/*
+#COMMENTOFF=*/
+#ESCAPE=\
+#CASE=y
+#NUMBER_PATTERN=cpp
+#SPECIAL_STX=mdl
+
+#KEYWORD=Reserved words
+TbVer
+LnMdl
+TblObj
+
+#KEYWORD=Compiler directives
+NumMtl
+NumObj
+MdlTp
+MtlIdx
+TmLcl0
+TmLcl1
+TmLcl2
+TmLcl3
+TmWld0
+TmWld1
+TmWld2
+TmWld3
+BoxMax
+BoxMin
+BoxCen
+Index
+Name
+PrntId
+PrntN
+LnRec
+#

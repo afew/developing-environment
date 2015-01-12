@@ -1,0 +1,89 @@
+﻿<EditorStyle name="Tango" _description="A light scheme using colors from the Tango Project.">
+  <Style name="text" color="#000000" bgColor="#FFFFFF" />
+  <Style name="text.background" color="#FFFFFF" />
+  <Style name="text.background.readonly" color="#FAFAF8" />
+  <Style name="text.background.searchresult-main" color="#F3D647" />
+  <Style name="text.background.searchresult" color="#FFE2B9" />
+  <Style name="text.selection" color="#EEEEEC" bgColor="#729FCF" />
+  <Style name="text.selection.inactive" color="#EEEEEC" bgColor="#BABDB6" />
+  <Style name="text.link" color="#0000FF" />
+  <Style name="text.punctuation" color="#2E3436" />
+  <Style name="text.preprocessor" color="#F57900" />
+  <Style name="xml" color="#000000" bgColor="#FFFFFF" />
+  <Style name="xml.tag" color="#204A87" />
+  <Style name="xml.name" color="#204A87" />
+  <Style name="xml.attribute" color="#204A87" weight="Italic" />
+  <Style name="xml.cdata" color="#75507B" />
+  <Style name="tooltip" color="#000000" bgColor="#FEFFE9" />
+  <Style name="tooltip.border" color="#B2B2B2" />
+  <Style name="tooltip.pager.text" color="#828282" />
+  <Style name="tooltip.pager.top" color="#FFFFFF" />
+  <Style name="tooltip.pager.bottom" color="#F5F5F5" />
+  <Style name="tooltip.pager.triangle" color="#737373" />
+  <Style name="completion" color="#434343" bgColor="#F0F6F8" />
+  <Style name="completion.highlight" color="#BA3373" />
+  <Style name="completion.selection" color="#F8FCFC" bgColor="#DFF4F0" />
+  <Style name="completion.selection.border" color="#C9C9C9" />
+  <Style name="completion.selection.inactive" color="#F9F9F9" bgColor="#E6E6E6" />
+  <Style name="completion.selection.inactive.border" color="#BEBEBE" />
+  <Style name="template" color="#000000" bgColor="#FDFAED" />
+  <Style name="template.tag" color="#000000" bgColor="#FDF0BD" />
+  <Style name="diff.line-added" color="#3465A4" />
+  <Style name="diff.line-removed" color="#EF2929" />
+  <Style name="diff.line-changed" color="#75507B" />
+  <Style name="diff.header" color="#4E9A06" weight="Bold" />
+  <Style name="diff.header-seperator" color="#4E9A06" weight="Bold" />
+  <Style name="diff.header-oldfile" color="#EF2929" weight="Bold" />
+  <Style name="diff.header-newfile" color="#3465A4" weight="Bold" />
+  <Style name="diff.location" color="#75507B" weight="Bold" />
+  <Style name="marker.line" color="#EEEEEC" />
+  <Style name="marker.line.changed" color="#73D216" />
+  <Style name="marker.line.dirty" color="#EDD400" />
+  <Style name="marker.ruler" color="#BABDB6" />
+  <Style name="marker.bracket" color="#D3D7CF" bgColor="#EEEEEC" />
+  <Style name="marker.usages" color="#EEEEEC" bgColor="#F5F5F5" />
+  <Style name="marker.bookmark.color1" color="#FFFFFF" />
+  <Style name="marker.bookmark.color2" color="#729FCF" />
+  <Style name="marker.template.primary_template" color="#4E9A06" bgColor="#73D216" />
+  <Style name="marker.template.primary_highlighted_template" color="#4E9A06" bgColor="#8AE234" />
+  <Style name="marker.template.secondary_template" color="#D3D7CF" bgColor="#FFFFFF" />
+  <Style name="marker.template.secondary_highlighted_template" color="#BABDB6" bgColor="#EEEEEC" />
+  <Style name="bubble.warning" color="#555753" bgColor="#F4EEDA" />
+  <Style name="bubble.error" color="#555753" bgColor="#F5EAE7" />
+  <Style name="linenumber" color="#888A85" bgColor="#FFFFFF" />
+  <Style name="iconbar" color="#EEEEEC" />
+  <Style name="iconbar.separator" color="#BABDB6" />
+  <Style name="fold" color="#BABDB6" bgColor="#FFFFFF" />
+  <Style name="fold.margin" color="#2A669A" bgColor="#B1CCE3" />
+  <Style name="comment" color="#4E9A06" />
+  <Style name="constant" color="#75507B" />
+  <Style name="constant.language.void" color="#4E9A06" weight="Bold" />
+  <Style name="string" color="#75507B" />
+  <Style name="string.escape" color="#5C3566" />
+  <Style name="keyword" color="#000000" weight="Bold" />
+  <Style name="keyword.namespace" color="#5C3566" weight="Bold" />
+  <Style name="keyword.property" color="#204A87" weight="Bold" />
+  <Style name="keyword.modifier" color="#5C3566" weight="Bold" />
+  <Style name="keyword.type" color="#4E9A06" weight="Bold" />
+  <Style name="keyword.declaration" color="#5C3566" weight="Bold" />
+  <Style name="keyword.access" color="#000000" weight="Bold" />
+  <Style name="keyword.operator" color="#204A87" weight="Bold" />
+  <Style name="keyword.operator.declaration" color="#204A87" weight="Bold" />
+  <Style name="keyword.selection" color="#204A87" weight="Bold" />
+  <Style name="keyword.iteration" color="#204A87" weight="Bold" />
+  <Style name="keyword.jump" color="#204A87" weight="Bold" />
+  <Style name="keyword.context" color="#204A87" />
+  <Style name="keyword.exceptions" color="#A40000" weight="Bold" />
+  <Style name="keyword.parameter" color="#204A87" weight="Bold" />
+  <Style name="keyword.misc" color="#204A87" />
+  <Style name="keyword.semantic.type" color="#3465A4" />
+  <Style name="keyword.semantic.field" color="#5C3566" weight="Bold" />
+  <Style name="keyword.semantic.property" color="#5C3566" weight="Bold" />
+  <Style name="keyword.semantic.method" color="#5C3566" weight="Bold" />
+  <Style name="keyword.semantic.error" color="#EF2929" weight="Bold" />
+  <Style name="comment.tag.line" color="#4E9A06" />
+  <Style name="comment.line" color="#4E9A06" />
+  <Style name="comment.tag.doc" color="#4E9A06" />
+  <Style name="comment.doc" color="#4E9A06" />
+  <Style name="constant.digit" color="#75507B" />
+</EditorStyle>

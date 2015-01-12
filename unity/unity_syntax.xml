@@ -1,0 +1,72 @@
+﻿<EditorStyle name="Heesung Oh" _description="Reminiscent of Microsoft Visual Studio's default colors.">
+  <Style name="text" color="#000000" bgColor="#FFFFFF" />
+  <Style name="text.selection" color="#FFFFFF" bgColor="#0A246A" />
+  <Style name="text.background.searchresult" color="#FFFF00" />
+  <Style name="text.background.readonly" color="#FFFFFF" />
+  <Style name="text.background.searchresult-main" color="#FFA500" />
+  <Style name="marker.template.primary_template" color="#B4E4B4" bgColor="#B4E4B4" />
+  <Style name="marker.template.primary_highlighted_template" color="#000000" bgColor="#B4E4B4" />
+  <Style name="marker.template.secondary_template" color="#FFFFFF" bgColor="#FFFFFF" />
+  <Style name="marker.template.secondary_highlighted_template" color="#808080" bgColor="#FFFFFF" />
+  <Style name="text.link" color="#204A87" />
+  <Style name="marker.line" color="#EEEEEC" />
+  <Style name="marker.ruler" color="#BABDB6" />
+  <Style name="marker.bracket" color="#D3D7CF" bgColor="#EEEEEC" />
+  <Style name="marker.usages" color="#EEEEEC" bgColor="#F5F5F5" />
+  <Style name="marker.bookmark.color1" color="#000000" />
+  <Style name="marker.bookmark.color2" color="#BFD2F9" />
+  <Style name="linenumber" color="#888A85" bgColor="#FFFFFF" />
+  <Style name="iconbar" color="#EEEEEC" />
+  <Style name="iconbar.separator" color="#BABDB6" />
+  <Style name="fold" color="#BABDB6" bgColor="#FFFFFF" />
+  <Style name="fold.margin" color="#2A669A" bgColor="#B1CCE3" />
+  <Style name="comment" color="#008000" />
+  <Style name="text.preprocessor" color="#800080" />
+  <Style name="xml" color="#000000" bgColor="#FFFFFF" />
+  <Style name="xml.tag" color="#000000" />
+  <Style name="xml.name" color="#204A87" />
+  <Style name="xml.attribute" color="#204A87" />
+  <Style name="xml.cdata" color="#A31515" />
+  <Style name="tooltip" color="#000000" bgColor="#FEFFE9" />
+  <Style name="tooltip.border" color="#B2B2B2" />
+  <Style name="tooltip.pager.text" color="#828282" />
+  <Style name="tooltip.pager.top" color="#FFFFFF" />
+  <Style name="tooltip.pager.bottom" color="#F5F5F5" />
+  <Style name="tooltip.pager.triangle" color="#737373" />
+  <Style name="completion" color="#434343" bgColor="#F0F6F8" />
+  <Style name="completion.highlight" color="#BA3373" />
+  <Style name="completion.selection" color="#F8FCFC" bgColor="#DFF4F0" />
+  <Style name="completion.selection.border" color="#C9C9C9" />
+  <Style name="completion.selection.inactive" color="#F9F9F9" bgColor="#E6E6E6" />
+  <Style name="completion.selection.inactive.border" color="#BEBEBE" />
+  <Style name="constant" color="#000000" />
+  <Style name="constant.language" color="#0000FF" />
+  <Style name="string" color="#A31515" />
+  <Style name="string.single" color="#A31515" />
+  <Style name="string.double" color="#A31515" />
+  <Style name="string.other" color="#A31515" />
+  <Style name="keyword.semantic.type" color="#008A8C" />
+  <Style name="keyword.semantic.error" color="#FF0000" />
+  <Style name="keyword.semantic.field" color="#5C3566" />
+  <Style name="keyword.semantic.property" color="#5C3566" />
+  <Style name="keyword.semantic.method" color="#5C3566" />
+  <Style name="keyword" color="#0000FF" />
+  <Style name="marker.line.changed" color="#EEEEEC" />
+  <Style name="marker.line.dirty" color="#EEEEEC" />
+  <Style name="comment.tag.line" color="#008000" />
+  <Style name="comment.line" color="#008000" />
+  <Style name="comment.tag.doc" color="#008000" />
+  <Style name="comment.doc" color="#008000" />
+  <Style name="keyword.namespace" color="#0000FF" />
+  <Style name="keyword.modifier" color="#0000FF" />
+  <Style name="keyword.declaration" color="#0000FF" />
+  <Style name="keyword.type" color="#0000FF" />
+  <Style name="constant.digit" color="#000000" />
+  <Style name="constant.language.void" color="#0000FF" />
+  <Style name="keyword.access" color="#0000FF" />
+  <Style name="keyword.operator" color="#0000FF" />
+  <Style name="keyword.parameter" color="#0000FF" />
+  <Style name="keyword.jump" color="#0000FF" />
+  <Style name="keyword.selection" color="#0000FF" />
+  <Style name="text.selection.inactive" color="#FFFFFF" bgColor="#0A246A" />
+</EditorStyle>
