@@ -1,0 +1,23 @@
+"*":
+  core:
+    automaticallyUpdate: false
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    fontFamily: "Bitstream Vera Sans Mono"
+    fontSize: 12
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "hard"
+    undoGroupingInterval: 9999
+  "exception-reporting":
+    userId: "5ce71ca8-59bf-d1f4-0788-a6335dfc7801"
+  welcome:
+    showOnStartup: false

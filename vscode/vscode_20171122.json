@@ -1,0 +1,19 @@
+﻿{
+    "editor.mouseWheelZoom": true,
+    "workbench.statusBar.visible": true,
+    "editor.fontFamily": "'Bitstream Vera Sans Mono', Monaco, 'Courier New', monospace",
+    "editor.autoClosingBrackets": false,
+    "editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderLineHighlight": "none",
+	"editor.lineHeight": 0,
+	"window.zoomLevel": 0,
+	"editor.renderControlCharacters": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.tabSize": 8,
+	"editor.trimAutoWhitespace": false,
+	"editor.useTabStops": false,
+	"extensions.ignoreRecommendations": true,
+	"extensions.autoUpdate": false,
+	"files.encoding": "utf8bom"
+}
